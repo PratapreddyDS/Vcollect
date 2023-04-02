@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login & Sign up Form</title>
+
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="login.css" /> 
+    <script src="login.js"> </script>
+
+</head>
+<body>
+	<h2>Login</h2>
+	<form>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" required><br><br>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required><br><br>
+
+		<input type="submit" value="Login">
+	</form>
+
+	<h2>Sign up</h2>
+	<form>
+		<label for="new-username">Username:</label>
+		<input type="text" id="new-username" name="new-username" required><br><br>
+
+		<label for="new-password">Password:</label>
+		<input type="password" id="new-password" name="new-password" required onkeyup='checkPasswordMatch();'><br><br>
+
+		<label for="confirm-password">Retype Password:</label>
+		<input type="password" id="confirm-password" name="confirm-password" required onkeyup='checkPasswordMatch();'><br><br>
+
+		<div id="password-match"></div>
+
+		<input type="submit" id="sign-up-button" value="Sign up" disabled>
+	</form>
+</body>
+</html>
+
+
