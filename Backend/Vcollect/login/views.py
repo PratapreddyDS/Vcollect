@@ -2,14 +2,19 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def validate(request,inputdetails):
-    if request.method == "POST":
-        # post the data into the database
-        print(inputdetails)
+from django.http import HttpResponse
+from .models import Registration
 
-        status = 200
+def validate(request):
+    if request.method == "GET":
+        # Process the GET request
+        # ...
 
-        return status
+        # sample_user = {'register_id':'12673808AB','username':'npratapreddy954@gmail.com','password':'Charfield','role':'Customer'}
+        # data = Registration.objects.create(**sample_user)
+        # print(data)
+        # Return an HttpResponse object with a status of 200
+        return HttpResponse("Success", status=200)
 
 
 
