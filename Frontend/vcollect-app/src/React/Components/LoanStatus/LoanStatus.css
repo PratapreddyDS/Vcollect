@@ -1,0 +1,37 @@
+.loan-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* .loan-status__input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  width: 20rem;
+} */
+
+.loan-status__button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.loan-status__button:hover {
+  background-color: #0059b3;
+}
+
+.loan-status__input {
+  width: 600px;
+  height: 50px;
+  font-size: 24px;
+  padding: 10px;
+}

@@ -1,0 +1,49 @@
+.payment-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .payment-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .payment-form input[type="text"],
+  .payment-form input[type="number"] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .payment-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .payment-form input[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+  
+  .payment-form .card-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .payment-form .card-group label {
+    margin-right: 10px;
+  }
+  
+  .payment-form .card-group input[type="radio"] {
+    margin-right: 5px;
+  }
